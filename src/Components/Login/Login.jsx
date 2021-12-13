@@ -36,7 +36,6 @@ function LoginIn() {
         } else {
             setpassworderror(true)
         }
-
         if (emailregex.test(userObj.email) && passwordRegex.test(userObj.password)) {
 
             UserLoginIn(userObj)
@@ -44,7 +43,7 @@ function LoginIn() {
                     console.log(response)
                     console.log(response.data.result.accessToken)
 
-                    localStorage.setItem("token",response.data.result.accessToken)
+                    localStorage.setItem("token", response.data.result.accessToken)
 
                 })
                 .catch((error) => {
