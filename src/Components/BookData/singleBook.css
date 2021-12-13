@@ -1,0 +1,217 @@
+.BookContainerMain{
+    /* border: 2px solid blue; */
+    width: 75vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.homesection{
+    font-size: 18px;
+
+}
+.SingleBookContainer{
+   /* border: 2px solid red; */
+   width: 75vw;
+   height: 90vh;
+   display: flex;
+   margin-top:20px ;
+   justify-content: space-between;
+}
+.ImgAndButtonsContainer{
+    /* border: 4px solid yellow; */
+    width: 32%;
+}
+.ImgSection{
+    border: 2px solid  lightgray;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BookImage{
+    height: 300px;
+}
+.buttonsSection{
+    /* border: 2px solid  red; */
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+   
+}
+.AddToBag{
+    /* border: 2px solid maroon; */
+    height: 35px;
+    width: 145px;
+    background-color: #A03037;
+    color: white;
+}
+.Counter{
+       /* border: 2px solid maroon; */
+       height: 34px;
+       width: 145px;
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+}
+#MainCart{
+    border: 2px solid lightslategray;
+    height: 24px;
+    width: 50px;
+    background-color: white;
+
+}
+.Wishlist{
+    height: 35px;
+    width: 145px;
+    background-color: #373434;
+    color: white;
+}
+.BookInformation{
+/* border: 4px solid green; */
+height:85%;
+width:62%;
+border-radius: 2px;
+opacity: 0.63;
+font-size: 14px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-between;
+
+}
+.BookSection{
+    /* border: 4px solid green; */
+    width:62%;
+    height:140px;
+    border-radius: 2px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+     
+
+.BookName{
+    height: 35px;
+    /* border: 2px solid blue; */
+   font-size: 28px;
+   font-weight: bold;
+}
+.BookAuthor{
+    height: 35px;
+    /* border: 2px solid blue; */
+   font-size: 20px;
+
+  
+}
+ .BookRating{
+     /* border: 2px solid blue; */
+     width: 80px;
+     height: 25px;
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .Rating{
+    /* border: 2px solid blue; */
+    width: 48px;
+    height: 22px;
+    color: white;
+    background-color: green;
+}
+ .BookRate{
+    /* border: 2px solid blue; */
+    width: 110px;
+    height: 25px;
+    display: flex;
+    font-size: 17px;
+
+    justify-content: space-between;
+}
+ .Originalprice{
+    /* border: 2px solid red; */
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+    font-weight:bold;
+
+ }
+ .BooKDescontainer{
+    /* border: 2px solid blue; */
+   /* height:250px; */
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   font-size: 18px;
+
+ }
+ .bookdetails{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    color:grey;
+    font-weight: 700;
+ }
+ .Bookpara{
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: flex-start;
+
+}
+.FeedBack{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.customerFeedBack{
+    /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.RatingBox{
+      /* border: 2px solid red; */
+      width: 557px;
+      height: 160px;
+      background: #F5F5F5;
+      border-radius: 2px;
+      opacity: 0.63;
+      display: flex;
+      justify-content: flex-end;
+      /* align-items: flex-end; */
+      
+
+  
+}
+.Overall-rating{
+    /* border: 2px solid red; */
+    width: 530px;
+    height: 160px;
+    
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  align-items: flex-start;
+  justify-content:space-around;
+}
+.InputField{
+    /* border: 2px solid red; */
+    width:100%;
+}
+#InputBox{
+    /* border: 2px solid red; */
+    width:460px;
+    background-color: white;
+}
+#submitrating{
+    /* border: 2px solid red; */
+     background-color: blue;
+     margin-left: 460px;
+}

@@ -1,0 +1,41 @@
+.SignUpContainer{
+    /* border: 2px solid red; */
+    width:100%;
+    height: 100%;
+    margin-top: 10px;
+
+}
+.TextContainer{
+    /* border: 2px solid yellow; */
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-around;
+
+}
+.inputField{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    font-size: 12px;
+
+
+}
+#outlined-basic{
+    /* border: 2px solid yellow; */
+     height: 3px;
+     width: 200px;
+}
+#signupbutton{
+     /* border: 2px solid Green; */
+     color: white;
+     width: 231px;
+    height: 37px;
+    background:#A03037 ;
+    border-radius: 3px;
+    opacity: 1;
+ 
+}

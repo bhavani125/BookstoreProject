@@ -1,0 +1,28 @@
+.CartBooks1{
+  /* border :2px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+.MinusPlusIcons{
+    display: flex;
+    justify-content: space-between;
+}
+.BookInfo{
+    /* border :2px solid red; */
+    height:90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.NameOfBook, .ActaulpriceOne{
+    /* border :2px solid red; */
+     font-size: 14px;
+     font-weight: bold;
+}
+.PriceOne{
+    display: flex;
+}
