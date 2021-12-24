@@ -72,7 +72,7 @@ function LoginIn() {
 
                 <button id="button1" onClick={onsubmit}>Login</button>
 
-                <div>-----------OR-----------</div>
+                <div className="OrText">-----------OR-----------</div>
 
                 <div className="FGbuttons">
                     <button id="button2">Facbook</button>

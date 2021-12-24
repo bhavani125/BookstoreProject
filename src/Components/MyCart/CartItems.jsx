@@ -4,7 +4,6 @@ import './CartItems.css'
 import { InCrementBookItems, DeleteBooks } from "../../Service/DataService";
 
 function CartItems(props) {
-
     // Method to update book order quantity
     const updateCartQuantity = (bookitem, quantitydata) => {
         let obj = {

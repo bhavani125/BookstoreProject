@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import OrderLogin from '../Pages/LoginSignUp/OrderLogin'
 import DashBoard from '../Pages/DashBoard/DashBoard';
-import CustomerDetails from '../Components/MyCart/CustomerDetails';
+import OrderPlaced from '../Components/MyCart/OrderPlaced';
+import Wishlist from '../Components/WishList/Wishlist';
 
 function Router() {
     return (
@@ -10,7 +11,9 @@ function Router() {
                 <Switch>
                     <Route exact path="/" component={OrderLogin} />
                     <Route path="/DashBoard" component={DashBoard} />
-                    <CustomerDetails/>
+                    <Route path="/OrderSuccess" component={OrderPlaced} />
+                    <Route path="/Wishlist" component={Wishlist} />
+
                 </Switch>
             </BrowserRouter>
         </>

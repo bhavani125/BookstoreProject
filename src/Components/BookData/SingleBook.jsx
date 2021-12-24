@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react"
 import './singleBook.css'
 import BookImg from '../../Assests/Home/book2.png'
 import TextField from '@mui/material/TextField';
-import { GetCartBooks, InCrementBookItems } from "../../Service/DataService";
+import { AddBooksToWishlist, GetCartBooks, InCrementBookItems } from "../../Service/DataService";
 import { AddBooks } from "../../Service/DataService";
-
+import { Link } from 'react-router-dom'
 
 function DisplaySingleBook(props) {
 
@@ -36,6 +36,7 @@ function DisplaySingleBook(props) {
         getcartBooks()
     }, [])
 
+    //posting cartitems into server
     const HandleCartItems = (e) => {
         AddBooks(e.target.id)
             .then((response) => {
@@ -46,6 +47,7 @@ function DisplaySingleBook(props) {
                 console.log(error)
             })
     }
+
     //handling the put method
     const updateQuantityItems = (quantitydata) => {
         let obj = {
@@ -69,15 +71,33 @@ function DisplaySingleBook(props) {
         updateQuantityItems(quantity)
     }
 
-
     const HandleDecrementCounter = () => {
         let quantity = presentInCart[0].quantityToBuy - 1;
         updateQuantityItems(quantity)
 
     }
+    const OpenHomePage = () => {
+        props.ListentoOpenBook(false)
+    }
+
+    //Handling wishlist items 
+    const HandleWishlistItems = (e) => {
+        props.ListentoOpenWishList(true)
+
+        AddBooksToWishlist(e.target.id)
+            .then((response) => {
+                console.log(response)
+                getcartBooks()
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+
+    }
+
     return (
         <div className="BookContainerMain">
-            <h2 className="homesection">Home</h2>
+            <h2 className="homesection" onClick={OpenHomePage}>Home</h2>
             <div className="SingleBookContainer">
                 <div className="ImgAndButtonsContainer">
 
@@ -110,8 +130,10 @@ function DisplaySingleBook(props) {
 
 
                         }
-                        {/* <button className="AddToBag" > ADD TO BAG</button> */}
-                        <button className="Wishlist">WISHLIST</button>
+                    {/* <Link to="/Wishlist"> */}
+
+                            <button className="Wishlist" id={props.singleBooksInfo._id} onClick={HandleWishlistItems}>WISHLIST</button>
+                   {/* </Link> */}
                     </div>
 
                 </div>
@@ -167,7 +189,7 @@ function DisplaySingleBook(props) {
 
                 </div>
             </div>
-        </div>
+        </div >
 
 
     )

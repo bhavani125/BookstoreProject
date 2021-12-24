@@ -1,9 +1,8 @@
 .SignUpContainer{
     /* border: 2px solid red; */
-    width:100%;
+    width:80%;
     height: 100%;
-    margin-top: 10px;
-
+    
 }
 .TextContainer{
     /* border: 2px solid yellow; */
@@ -24,7 +23,7 @@
 
 
 }
-#outlined-basic{
+#outlined-basics{
     /* border: 2px solid yellow; */
      height: 3px;
      width: 200px;
@@ -38,4 +37,85 @@
     border-radius: 3px;
     opacity: 1;
  
+}
+@media only screen and (max-device-width: 400px) {
+    .SignUpContainer{
+        /* border: 2px solid red; */
+        width:75%;
+        height: 100%;
+    
+    }
+    .inputField{
+        /* border: 2px solid green; */
+        height: 18%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        font-size: 12px;
+    
+    
+    }
+    
+    
+}
+@media only screen and (min-device-width:700px) and (max-device-width: 1000px)  {
+    .SignUpContainer{
+        /* border: 2px solid red; */
+        width:75%;
+        height: 100%;
+    
+    }
+    .inputField{
+        /* border: 2px solid blue; */
+        width: 530px;
+        height:150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        font-size: 30px;
+     }
+    #outlined-basics{
+        /* border: 2px solid red; */
+         height: 40px;
+         width: 500px;
+         font-size:30px;
+        }
+    #signupbutton{
+        /* border: 2px solid Green; */
+        width: 520px;
+       height: 70px;
+       font-size:30px;
+
+   }
+   
+    
+}
+@media only screen and (min-device-width:1000px) and (max-device-width: 1100px ) and (min-device-height:1366px)  {
+    .SignUpContainer{
+        /* border: 2px solid red; */
+        width:95%;
+        height: 100%;
+    
+    }
+    .inputField{
+        /* border: 2px solid blue; */
+        width: 660px;
+        height:150px; 
+        font-size: 40px;
+     }
+    #outlined-basics{
+        /* border: 2px solid red; */
+         height: 70px;
+         width: 630px;
+         font-size:40px;
+        }
+    #signupbutton{
+        /* border: 2px solid Green; */
+        width: 670px;
+       height: 100px;
+       font-size:40px;
+
+   }
+   
+    
 }

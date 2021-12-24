@@ -32,7 +32,7 @@
     height: 35px;
     color: #A03037;
     background: #FFFFFF ;
-    border: 1px solid #A03037;
+    /* border: 1px solid #A03037; */
     border-radius: 2px;
     opacity: 1;
 }

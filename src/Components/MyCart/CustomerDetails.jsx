@@ -76,12 +76,14 @@ function CustomerDetails(props) {
                     <div className='radiobtns'>
                         <div>  <input type='radio' value="Home" /> Home</div>
                         <div> <input type='radio' value="Work" /> Work</div>
-
                         <div><input type='radio' value="other" /> Other</div>
                     </div>
 
                 </div>
-                <div className="ContinueButton" onClick={onSubmit}>Continue</div>
+                {
+                    !props.openOrderDetails && <div className="ContinueButton" onClick={onSubmit}>Continue</div>
+
+                }
 
             </div>
         </div>

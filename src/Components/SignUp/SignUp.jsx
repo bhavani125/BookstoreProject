@@ -93,21 +93,21 @@ function SignUp() {
             <div className="TextContainer">
                 <div className="inputField">
                     <div className="texts"> FullName </div>
-                    <TextField id="outlined-basic" onChange={takefullName} error={fullNameerror} helperText={fullNamehelper} label="" variant="outlined" />
+                    <TextField id="outlined-basics" onChange={takefullName} error={fullNameerror} helperText={fullNamehelper} label="" variant="outlined" />
                 </div>
                 <div className="inputField">
                     <div className="texts"> Email Id </div>
-                    <TextField id="outlined-basic" onChange={takeemail} error={emailerror} helperText={emailhelper} label="" variant="outlined" />
+                    <TextField id="outlined-basics" onChange={takeemail} error={emailerror} helperText={emailhelper} label="" variant="outlined" />
                 </div>
                 <div className="inputField">
                     <div className="texts"> Password </div>
 
-                    <TextField id="outlined-basic" onChange={takepassword} error={passworderror} helperText={passwordhelper} label="" type="password" />
+                    <TextField id="outlined-basics" onChange={takepassword} error={passworderror} helperText={passwordhelper} label="" type="password" />
                 </div>
 
                 <div className="inputField">
                     <div className="texts"> MobileNumber </div>
-                    <TextField id="outlined-basic" onChange={takephone} error={phoneerror} helperText={phonehelper} label="" variant="outlined" />
+                    <TextField id="outlined-basics" onChange={takephone} error={phoneerror} helperText={phonehelper} label="" variant="outlined" />
                 </div>
                 <button id="signupbutton" onClick={onSubmit}>Signup</button>
 

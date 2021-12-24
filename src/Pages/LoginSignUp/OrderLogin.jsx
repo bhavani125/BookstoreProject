@@ -18,21 +18,25 @@ function MainDesign() {
         <div className="MainContainer">
 
             <div className="imgContainer">
-                <img id="imgIcon" src={shoppingicon} alt="" />
-                <div className="Name">
-                    <h>Online Book Shopping</h>
+                <div className="ImgContainer">
+                    <img id="imgIcon" src={shoppingicon} alt="" />
+                    <div className="Name">
+                        <h>Online Book Shopping</h>
+                    </div>
                 </div>
             </div >
 
             <div className="loginSignupContainer">
-                <div className="HeadNames">
-                    <div onClick={displayLogin}>  Login    </div>
-                    <div onClick={displaySignin}>  Signup   </div>
-                </div>
-                <div className="Components">
-                    {
-                        OpenLogininSignup ? (<SignUp />) : (<LoginIn />)
-                    }
+                <div className="loginSignupContainer2">
+                    <div className="HeadNames">
+                        <div onClick={displayLogin}>  Login    </div>
+                        <div onClick={displaySignin}>  Signup   </div>
+                    </div>
+                    <div className="Components">
+                        {
+                            OpenLogininSignup ? (<SignUp />) : (<LoginIn />)
+                        }
+                    </div>
                 </div>
             </div>
 
